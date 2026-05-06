@@ -99,6 +99,7 @@ export function AdminPanel() {
   const [newHeroId, setNewHeroId] = useState("");
   const [newHeroName, setNewHeroName] = useState("");
   const [newHeroRole, setNewHeroRole] = useState<HeroRole>("Duelist");
+  const [newHeroImageUrl, setNewHeroImageUrl] = useState("");
   const [loadingOverrides, setLoadingOverrides] = useState(false);
   const [loadingExtras, setLoadingExtras] = useState(false);
   const [overrideEditor, setOverrideEditor] = useState("{}");
@@ -201,15 +202,32 @@ export function AdminPanel() {
       setExtrasStatus("That id is already in the extra list.");
       return;
     }
-    setCatalogExtras((prev) => [...prev, { id, name, role: newHeroRole }]);
+    setCatalogExtras((prev) => [
+      ...prev,
+      {
+        id,
+        name,
+        role: newHeroRole,
+        imageUrl: newHeroImageUrl.trim() || undefined,
+      },
+    ]);
     setNewHeroId("");
     setNewHeroName("");
+    setNewHeroImageUrl("");
     setExtrasStatus("Added locally — click Save extra heroes to persist.");
   };
 
   const removeExtraHero = (id: string) => {
     setCatalogExtras((prev) => prev.filter((h) => h.id !== id));
     setExtrasStatus("Removed locally — click Save extra heroes to persist.");
+  };
+
+  const updateExtraHeroImage = (id: string, imageUrl: string) => {
+    const normalized = imageUrl.trim();
+    setCatalogExtras((prev) =>
+      prev.map((h) => (h.id === id ? { ...h, imageUrl: normalized || undefined } : h)),
+    );
+    setExtrasStatus("Updated locally — click Save extra heroes to persist.");
   };
 
   const loadOverrides = async () => {
@@ -389,7 +407,8 @@ export function AdminPanel() {
         <h2 className="text-base font-semibold">Extra heroes (custom roster)</h2>
         <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
           Add heroes not in the shipped catalog. They appear in the main app pool and need a{" "}
-          <strong className="font-medium">role</strong> for scoring (saved with the entry). Add
+          <strong className="font-medium">role</strong> for scoring (saved with the entry). Optional{" "}
+          <strong className="font-medium">image URL/path</strong> is used as the profile image. Add
           guide overrides below for jobs, counters, and synergies.
         </p>
 
@@ -410,6 +429,15 @@ export function AdminPanel() {
               onChange={(e) => setNewHeroName(e.target.value)}
               className="mt-1 block w-48 rounded-md border border-zinc-300 bg-white px-2 py-1 text-sm dark:border-zinc-700 dark:bg-zinc-950"
               placeholder="Squirrel Girl"
+            />
+          </label>
+          <label className="text-xs text-zinc-600 dark:text-zinc-300">
+            Image URL/path (optional)
+            <input
+              value={newHeroImageUrl}
+              onChange={(e) => setNewHeroImageUrl(e.target.value)}
+              className="mt-1 block w-72 rounded-md border border-zinc-300 bg-white px-2 py-1 text-sm dark:border-zinc-700 dark:bg-zinc-950"
+              placeholder="/heroes/squirrel-girl.webp or https://..."
             />
           </label>
           <label className="text-xs text-zinc-600 dark:text-zinc-300">
@@ -454,21 +482,29 @@ export function AdminPanel() {
         {catalogExtras.length > 0 && (
           <ul className="mt-4 divide-y divide-zinc-200 rounded-lg border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
             {catalogExtras.map((h) => (
-              <li
-                key={h.id}
-                className="flex flex-wrap items-center justify-between gap-2 px-3 py-2 text-sm"
-              >
-                <span>
-                  <span className="font-medium">{h.name}</span>{" "}
-                  <code className="text-xs text-zinc-500">{h.id}</code> · {h.role}
-                </span>
-                <button
-                  type="button"
-                  onClick={() => removeExtraHero(h.id)}
-                  className="text-xs text-red-600 dark:text-red-400"
-                >
-                  Remove
-                </button>
+              <li key={h.id} className="px-3 py-2 text-sm">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span>
+                    <span className="font-medium">{h.name}</span>{" "}
+                    <code className="text-xs text-zinc-500">{h.id}</code> · {h.role}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => removeExtraHero(h.id)}
+                    className="text-xs text-red-600 dark:text-red-400"
+                  >
+                    Remove
+                  </button>
+                </div>
+                <label className="mt-2 block text-xs text-zinc-600 dark:text-zinc-300">
+                  Profile image URL/path
+                  <input
+                    value={h.imageUrl ?? ""}
+                    onChange={(e) => updateExtraHeroImage(h.id, e.target.value)}
+                    className="mt-1 block w-full rounded-md border border-zinc-300 bg-white px-2 py-1 text-sm dark:border-zinc-700 dark:bg-zinc-950"
+                    placeholder="/heroes/example.webp or https://..."
+                  />
+                </label>
               </li>
             ))}
           </ul>

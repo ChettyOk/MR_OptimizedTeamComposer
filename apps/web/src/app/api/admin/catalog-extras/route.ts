@@ -23,13 +23,17 @@ function normalizeExtras(input: unknown): { ok: true; heroes: Hero[] } | { ok: f
     }
     const id = r.id.trim().toLowerCase();
     const name = r.name.trim();
+    const imageUrl =
+      typeof r.imageUrl === "string" && r.imageUrl.trim().length > 0
+        ? r.imageUrl.trim()
+        : undefined;
     if (!ID_RE.test(id) || !name) {
       return { ok: false, error: "Invalid id or name" };
     }
     if (staticIds.has(id)) {
       return { ok: false, error: `Id "${id}" is already in the built-in roster` };
     }
-    heroes.push({ id, name, role: r.role });
+    heroes.push({ id, name, role: r.role, imageUrl });
   }
   const seen = new Set<string>();
   for (const h of heroes) {

@@ -41,7 +41,11 @@ export function parseCatalogExtrasJson(raw: string | null): Hero[] {
       if (typeof r.id !== "string" || typeof r.name !== "string" || !isHeroRole(r.role)) {
         continue;
       }
-      heroes.push({ id: r.id, name: r.name, role: r.role });
+      const imageUrl =
+        typeof r.imageUrl === "string" && r.imageUrl.trim().length > 0
+          ? r.imageUrl.trim()
+          : undefined;
+      heroes.push({ id: r.id, name: r.name, role: r.role, imageUrl });
     }
     return heroes;
   } catch {

@@ -180,6 +180,8 @@ export function TeamComposerApp() {
   };
 
   const heroPortraitPath = (id: string) => {
+    const configuredImage = heroById.get(id)?.imageUrl?.trim();
+    if (configuredImage) return configuredImage;
     if (id.startsWith("deadpool-")) return "/heroes/deadpool.webp";
     return `/heroes/${id}.webp`;
   };

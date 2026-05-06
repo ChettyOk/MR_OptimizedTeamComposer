@@ -11,6 +11,7 @@ export interface Hero {
   id: string;
   name: string;
   role: HeroRole;
+  imageUrl?: string;
 }
 
 export const HERO_CATALOG: readonly Hero[] = [
