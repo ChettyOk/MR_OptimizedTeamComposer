@@ -1,0 +1,38 @@
+# Postgres + Redis for local dev (OrbStack, Docker Desktop, or CLI `docker compose`).
+# Start: docker compose up -d
+# Stop:  docker compose down
+# Data persists in the named volume until you docker compose down -v
+#
+# Next.js: DATABASE_URL=postgresql://teamcomposer:teamcomposer@localhost:5433/teamcomposer
+#          REDIS_URL=redis://localhost:6379  (optional; in-process cache still applies)
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: teamcomposer
+      POSTGRES_PASSWORD: teamcomposer
+      POSTGRES_DB: teamcomposer
+    volumes:
+      - teamcomposer_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U teamcomposer -d teamcomposer"]
+      interval: 3s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --maxmemory 128mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  teamcomposer_pgdata:

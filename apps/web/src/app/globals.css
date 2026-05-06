@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090f1f;
+  --foreground: #f3f7ff;
+  --card: #132244;
+  --card-soft: #1a2d56;
+  --muted: #b8c8f6;
+  --border: #3c5ea8;
+  --accent: #ff3657;
+  --accent-2: #2fd2ff;
+  --ring: #ffd257;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #070b16;
+    --foreground: #e6ebff;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    Inter,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgb(47 210 255 / 0.28), transparent 42%),
+    radial-gradient(circle at 85% 14%, rgb(255 54 87 / 0.28), transparent 38%),
+    radial-gradient(circle at 55% 88%, rgb(102 85 255 / 0.18), transparent 44%),
+    linear-gradient(180deg, #101f44 0%, #090f1f 62%);
+}
+
+.mr-shell {
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 0.03), rgb(255 255 255 / 0.01)),
+    var(--background);
+}
+
+.mr-panel {
+  background: linear-gradient(180deg, rgb(26 44 92 / 0.9), rgb(18 33 72 / 0.92));
+  border: 1px solid var(--border);
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.06) inset,
+    0 20px 40px rgb(5 10 26 / 0.45);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mr-panel:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.08) inset,
+    0 26px 52px rgb(5 10 26 / 0.55);
+}
+
+.mr-subpanel {
+  background: linear-gradient(180deg, rgb(29 50 104 / 0.84), rgb(21 39 83 / 0.86));
+  border: 1px solid rgb(93 127 208 / 0.5);
+}
+
+.mr-title {
+  letter-spacing: 0.02em;
+  text-shadow:
+    0 0 22px rgb(47 210 255 / 0.35),
+    0 0 38px rgb(255 54 87 / 0.18);
+}
+
+.mr-chip {
+  border: 1px solid rgb(116 151 233 / 0.72);
+  background: rgb(35 57 110 / 0.78);
+  color: #edf3ff;
+  transition:
+    transform 0.12s ease,
+    border-color 0.12s ease,
+    background-color 0.12s ease;
+}
+
+.mr-chip:hover {
+  border-color: rgb(166 198 255 / 0.92);
+  background: rgb(47 73 136 / 0.95);
+  transform: translateY(-1px);
+}
+
+.mr-btn-primary {
+  background: linear-gradient(90deg, #ff3657, #ff854a 55%, #ffd257);
+  color: white;
+  border: 1px solid rgb(255 255 255 / 0.22);
+  box-shadow:
+    0 10px 24px rgb(255 54 87 / 0.42),
+    0 0 0 1px rgb(255 255 255 / 0.1) inset;
+}
+
+.mr-btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.mr-btn-secondary {
+  border: 1px solid rgb(47 210 255 / 0.62);
+  background: linear-gradient(180deg, rgb(35 72 132 / 0.82), rgb(24 54 101 / 0.82));
+  color: #eff8ff;
+}
+
+.mr-btn-secondary:hover {
+  background: linear-gradient(180deg, rgb(45 89 161 / 0.88), rgb(30 66 122 / 0.88));
+}
+
+button:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.mr-avatar {
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.08) inset;
+}
+
+.mr-fade-in {
+  animation: mrFadeIn 280ms ease both;
+}
+
+@keyframes mrFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

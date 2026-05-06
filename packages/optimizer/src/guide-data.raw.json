@@ -1,0 +1,1471 @@
+{
+  "Captain America": {
+    "role": "Vanguard",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Dive",
+    "primaryZone": "Enemy Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Check-In",
+    "notes": "Keep one of his mobility skills (dash/slam) on cooldown for the purpose of retreating to your back line.",
+    "counters": [
+      "Hawkeye",
+      "Iron Fist",
+      "Luna Snow",
+      "Mantis",
+      "Moon Knight",
+      "Squirrel Girl",
+      "The Punisher"
+    ],
+    "counteredBy": [
+      "Emma Frost",
+      "Groot",
+      "Hela",
+      "Loki",
+      "Namor",
+      "Peni Parker",
+      "Scarlet Witch",
+      "Storm"
+    ],
+    "synergies": [
+      "Hulk",
+      "Thor",
+      "Venom"
+    ]
+  },
+  "Doctor Strange": {
+    "role": "Vanguard",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Shield",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Frontline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Black Widow",
+      "Hela",
+      "Iron Man",
+      "Magik",
+      "Scarlet Witch",
+      "Spider-Man",
+      "Star-Lord",
+      "Winter Soldier"
+    ],
+    "counteredBy": [
+      "Black Panther",
+      "Hulk",
+      "Venom",
+      "Winter Soldier",
+      "Wolverine"
+    ],
+    "synergies": []
+  },
+  "Emma Frost": {
+    "role": "Vanguard",
+    "archetype": "Generalist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Peel",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Strategist",
+    "notes": "Use your Diamond Form/grab to inturupt divers and their ults. Protect your backline before applying pressure.",
+    "counters": [
+      "Captain America",
+      "Hulk",
+      "Iron Fist",
+      "Scarlet Witch",
+      "Spider-Man",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Cloak and Dagger",
+      "Human Torch",
+      "Iron Man",
+      "Squirrel Girl"
+    ],
+    "synergies": []
+  },
+  "Groot": {
+    "role": "Vanguard",
+    "archetype": "Generalist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Shield",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Control",
+    "secondaryZone": "Frontline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Strategist",
+    "notes": "Be mindful of wall placement. Blocking your Strategist's line-of-sight can put your team at a disadvantage.",
+    "counters": [
+      "Black Widow",
+      "Captain America",
+      "Hawkeye",
+      "Mister Fantastic",
+      "Peni Parker",
+      "The Thing"
+    ],
+    "counteredBy": [
+      "Hela",
+      "Iron Man",
+      "Storm",
+      "The Punisher",
+      "Wolverine"
+    ],
+    "synergies": []
+  },
+  "Hulk": {
+    "role": "Vanguard",
+    "archetype": "Generalist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Check-In",
+    "notes": "Disrupt the enemy backline without overcommitting. You still need to be close enough to your backline to peel.",
+    "counters": [
+      "Doctor Strange"
+    ],
+    "counteredBy": [
+      "Emma Frost",
+      "Iron Man",
+      "Namor",
+      "Peni Parker",
+      "Storm",
+      "The Punisher",
+      "Thor",
+      "Wolverine"
+    ],
+    "synergies": [
+      "Venom"
+    ]
+  },
+  "Magneto": {
+    "role": "Vanguard",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Shield",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Frontline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Cloak and Dagger",
+      "Hawkeye",
+      "Hela",
+      "Star-Lord",
+      "Venom",
+      "Winter Soldier"
+    ],
+    "counteredBy": [
+      "Black Panther",
+      "The Punisher",
+      "Venom",
+      "Wolverine"
+    ],
+    "synergies": []
+  },
+  "Peni Parker": {
+    "role": "Vanguard",
+    "archetype": "Specialist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Control",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Strategist",
+    "notes": "Specializes in holding defensive positions. Place Spider-Nest behind cover and prioritize protecting it.",
+    "counters": [
+      "Black Panther",
+      "Captain America",
+      "Hulk",
+      "Iron Fist",
+      "Jeff the Land Shark",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Groot",
+      "Human Torch",
+      "Iron Man",
+      "Loki",
+      "Moon Knight",
+      "Namor",
+      "Squirrel Girl",
+      "Star Lord",
+      "Storm",
+      "The Punisher",
+      "Thor"
+    ],
+    "synergies": []
+  },
+  "The Thing": {
+    "role": "Vanguard",
+    "archetype": "Generalist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Strategist",
+    "notes": "It's best to play close enough to Strategists to leap to them. This will help him both peel and get out of trouble quickly.",
+    "counters": [
+      "Magik",
+      "Spider-Man",
+      "Venom"
+    ],
+    "counteredBy": [
+      "Groot",
+      "Iron Man",
+      "Squirrel Girl",
+      "Star Lord",
+      "Storm"
+    ],
+    "synergies": []
+  },
+  "Thor": {
+    "role": "Vanguard",
+    "archetype": "Generalist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Dive",
+    "secondaryZone": "Enemy Backline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Hulk",
+      "Peni Parker",
+      "Winter Soldier"
+    ],
+    "counteredBy": [
+      "Mantis",
+      "Scarlet Witch",
+      "Star Lord",
+      "Storm",
+      "The Punisher",
+      "Winter Soldier",
+      "Wolverine"
+    ],
+    "synergies": [
+      "Captain America"
+    ]
+  },
+  "Venom": {
+    "role": "Vanguard",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Dive",
+    "primaryZone": "Enemy Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Check-In",
+    "notes": null,
+    "counters": [
+      "Adam Warlock",
+      "Doctor Strange",
+      "Magneto",
+      "Namor",
+      "Psylocke",
+      "Rocket Raccoon",
+      "Spider-Man",
+      "Squirrel Girl"
+    ],
+    "counteredBy": [
+      "Iron Man",
+      "Magneto",
+      "Storm",
+      "The Punisher",
+      "The Thing",
+      "Wolverine"
+    ],
+    "synergies": [
+      "Hulk",
+      "Squirrel Girl"
+    ]
+  },
+  "Black Panther": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Dive",
+    "primaryZone": "Enemy Backline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 4.0,
+    "healingResponsibility": "Check-In",
+    "notes": null,
+    "counters": [
+      "Adam Warlock",
+      "Black Widow",
+      "Doctor Strange",
+      "Jeff the Land Shark",
+      "Magneto",
+      "Moon Knight",
+      "Rocket Raccoon",
+      "Squirrel Girl",
+      "The Punisher"
+    ],
+    "counteredBy": [
+      "Human Torch",
+      "Iron Man",
+      "Loki",
+      "Mantis",
+      "Namor",
+      "Peni Parker",
+      "Star Lord",
+      "Storm",
+      "Winter Soldier"
+    ],
+    "synergies": [
+      "Mantis"
+    ]
+  },
+  "Black Widow": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Sniper",
+    "primaryJob": "Poke",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": null,
+    "secondaryZone": null,
+    "healingPriority": 5.0,
+    "healingResponsibility": "Health Pack",
+    "notes": "Prioritize flyers.",
+    "counters": [
+      "Iron Man",
+      "Jeff the Land Shark",
+      "Squirrel Girl",
+      "Storm"
+    ],
+    "counteredBy": [
+      "Black Panther",
+      "Cloak and Dagger",
+      "Doctor Strange",
+      "Groot",
+      "Magik",
+      "Psylocke",
+      "Spider-Man"
+    ],
+    "synergies": []
+  },
+  "Hawkeye": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Sniper",
+    "primaryJob": "Poke",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 5.0,
+    "healingResponsibility": "Health Pack",
+    "notes": "Prioritize flyers.",
+    "counters": [
+      "Cloak and Dagger",
+      "Human Torch",
+      "Iron Man",
+      "Jeff the Land Shark",
+      "Magik",
+      "Mister Fantastic",
+      "Moon Knight",
+      "Namor",
+      "Scarlet Witch",
+      "Spider-Man",
+      "Squirrel Girl",
+      "Star-Lord",
+      "Storm",
+      "The Punisher",
+      "Winter Soldier"
+    ],
+    "counteredBy": [
+      "Captain America",
+      "Groot",
+      "Hela",
+      "Iron Fist",
+      "Magik",
+      "Magneto",
+      "Psylocke",
+      "Spider-Man",
+      "Star Lord"
+    ],
+    "synergies": []
+  },
+  "Hela": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Sniper",
+    "primaryJob": "Poke",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 5.0,
+    "healingResponsibility": "Health Pack",
+    "notes": "Prioritize flyers.",
+    "counters": [
+      "Captain America",
+      "Cloak and Dagger",
+      "Groot",
+      "Hawkeye",
+      "Human Torch",
+      "Iron Man",
+      "Mister Fantastic",
+      "Moon Knight",
+      "Namor",
+      "Scarlet Witch",
+      "Squirrel Girl",
+      "Star-Lord",
+      "Storm",
+      "The Punisher",
+      "Winter Soldier"
+    ],
+    "counteredBy": [
+      "Doctor Strange",
+      "Loki",
+      "Luna Snow",
+      "Magik",
+      "Magneto",
+      "The Punisher"
+    ],
+    "synergies": []
+  },
+  "Iron Fist": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Dive",
+    "primaryZone": "Enemy Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 5.0,
+    "healingResponsibility": "Self",
+    "notes": null,
+    "counters": [
+      "Adam Warlock",
+      "Hawkeye",
+      "Invisible Woman",
+      "Iron Man",
+      "Mantis",
+      "Spider-Man",
+      "Storm",
+      "The Punisher"
+    ],
+    "counteredBy": [
+      "Captain America",
+      "Cloak and Dagger",
+      "Emma Frost",
+      "Loki",
+      "Mister Fantastic",
+      "Peni Parker",
+      "Rocket Raccoon",
+      "Winter Soldier"
+    ],
+    "synergies": [
+      "Mantis"
+    ]
+  },
+  "Iron Man": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "AOE",
+    "primaryJob": "Control",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 5.0,
+    "healingResponsibility": "Health Pack",
+    "notes": null,
+    "counters": [
+      "Black Panther",
+      "Emma Frost",
+      "Groot",
+      "Hulk",
+      "Jeff the Land Shark",
+      "Loki",
+      "Luna Snow",
+      "Magik",
+      "Mantis",
+      "Moon Knight",
+      "Peni Parker",
+      "Rocket Raccoon",
+      "The Thing",
+      "Venom",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Black Widow",
+      "Doctor Strange",
+      "Hawkeye",
+      "Hela",
+      "Iron Fist",
+      "Namor",
+      "Psylocke",
+      "Star Lord",
+      "The Punisher"
+    ],
+    "synergies": [
+      "Hulk",
+      "Invisible Woman",
+      "Mantis"
+    ]
+  },
+  "Human Torch": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "AOE",
+    "primaryJob": "Control",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 5.0,
+    "healingResponsibility": "Health Pack",
+    "notes": null,
+    "counters": [
+      "Black Panther",
+      "Emma Frost",
+      "Moon Knight",
+      "Peni Parker"
+    ],
+    "counteredBy": [
+      "Hawkeye",
+      "Hela",
+      "Psylocke",
+      "Spider-Man",
+      "The Punisher"
+    ],
+    "synergies": [
+      "Invisible Woman",
+      "Mantis",
+      "Storm"
+    ]
+  },
+  "Magik": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Dive",
+    "secondaryZone": "Enemy Backline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Black Widow",
+      "Cloak and Dagger",
+      "Hawkeye",
+      "Hela",
+      "Invisible Woman",
+      "Moon Knight",
+      "The Punisher"
+    ],
+    "counteredBy": [
+      "Cloak and Dagger",
+      "Doctor Strange",
+      "Hawkeye",
+      "Iron Man",
+      "Luna Snow",
+      "Namor",
+      "The Punisher",
+      "The Thing",
+      "Winter Soldier"
+    ],
+    "synergies": [
+      "Mantis"
+    ]
+  },
+  "Mister Fantastic": {
+    "role": "Duelist",
+    "archetype": "Hybrid",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Peel",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Iron Fist"
+    ],
+    "counteredBy": [
+      "Groot",
+      "Hawkeye",
+      "Hela",
+      "Storm",
+      "The Punisher",
+      "Wolverine"
+    ],
+    "synergies": [
+      "Invisible Woman",
+      "Luna Snow"
+    ]
+  },
+  "Namor": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Control",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 4.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Black Panther",
+      "Captain America",
+      "Hulk",
+      "Iron Man",
+      "Magik",
+      "Peni Parker",
+      "Psylocke",
+      "Spider-Man",
+      "Star-Lord",
+      "Storm",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Hawkeye",
+      "Hela",
+      "Moon Knight",
+      "Venom"
+    ],
+    "synergies": [
+      "Luna Snow",
+      "Mantis"
+    ]
+  },
+  "Psylocke": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Dive",
+    "primaryZone": "Enemy Backline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Enemy Backline",
+    "healingPriority": 5.0,
+    "healingResponsibility": "Health Pack",
+    "notes": null,
+    "counters": [
+      "Adam Warlock",
+      "Black Widow",
+      "Cloak and Dagger",
+      "Hawkeye",
+      "Human Torch",
+      "Invisible Woman",
+      "Iron Man",
+      "Jeff the Land Shark",
+      "Loki",
+      "Luna Snow",
+      "Mantis",
+      "Moon Knight",
+      "Rocket Raccoon",
+      "Scarlet Witch",
+      "Storm",
+      "Winter Soldier",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Invisible Woman",
+      "Mantis",
+      "Namor",
+      "Scarlet Witch",
+      "Star Lord",
+      "Venom"
+    ],
+    "synergies": [
+      "Mantis"
+    ]
+  },
+  "Scarlet Witch": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Brawl",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 4.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Captain America",
+      "Invisible Woman",
+      "Luna Snow",
+      "Psylocke",
+      "Spider-Man",
+      "Storm",
+      "Thor",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Doctor Strange",
+      "Emma Frost",
+      "Hawkeye",
+      "Hela",
+      "Psylocke",
+      "The Punisher"
+    ],
+    "synergies": [
+      "Adam Warlock",
+      "Invisible Woman",
+      "Magneto"
+    ]
+  },
+  "Spider-Man": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Dive",
+    "primaryZone": "Enemy Backline",
+    "secondaryJob": null,
+    "secondaryZone": null,
+    "healingPriority": 5.0,
+    "healingResponsibility": "Health Pack",
+    "notes": "Gets more value out of Health Packs than healers.",
+    "counters": [
+      "Adam Warlock",
+      "Black Widow",
+      "Hawkeye",
+      "Human Torch",
+      "Invisible Woman",
+      "Jeff the Land Shark",
+      "Luna Snow",
+      "Mantis",
+      "Moon Knight",
+      "Squirrel Girl",
+      "Storm"
+    ],
+    "counteredBy": [
+      "Doctor Strange",
+      "Emma Frost",
+      "Hawkeye",
+      "Iron Fist",
+      "Namor",
+      "Scarlet Witch",
+      "The Thing",
+      "Venom"
+    ],
+    "synergies": []
+  },
+  "Squirrel Girl": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "AOE",
+    "primaryJob": "Brawl",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Control",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 4.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Emma Frost",
+      "Invisible Woman",
+      "Peni Parker",
+      "The Thing"
+    ],
+    "counteredBy": [
+      "Black Panther",
+      "Black Widow",
+      "Captain America",
+      "Hawkeye",
+      "Hela",
+      "Spider-Man",
+      "Venom"
+    ],
+    "synergies": [
+      "Mantis",
+      "Venom"
+    ]
+  },
+  "Star-Lord": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Brawl",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 5.0,
+    "healingResponsibility": "Health Pack",
+    "notes": null,
+    "counters": [
+      "Black Panther",
+      "Hawkeye",
+      "Iron Man",
+      "Moon Knight",
+      "Peni Parker",
+      "Psylocke",
+      "Rocket Raccoon",
+      "The Thing",
+      "Thor",
+      "Winter Soldier"
+    ],
+    "counteredBy": [
+      "Doctor Strange",
+      "Hawkeye",
+      "Hela",
+      "Loki",
+      "Luna Snow",
+      "Magneto",
+      "Namor",
+      "The Punisher"
+    ],
+    "synergies": [
+      "Mantis"
+    ]
+  },
+  "Storm": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Buff",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Strategist",
+    "notes": "Gets more value when paired with frontline, brawl-heavy teams. Use Goddess Boost to protect your backline.",
+    "counters": [
+      "Black Panther",
+      "Captain America",
+      "Groot",
+      "Hulk",
+      "Jeff the Land Shark",
+      "Mister Fantastic",
+      "Moon Knight",
+      "Peni Parker",
+      "The Thing",
+      "Thor",
+      "Venom",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Adam Warlock",
+      "Black Widow",
+      "Hawkeye",
+      "Hela",
+      "Invisible Woman",
+      "Iron Fist",
+      "Luna Snow",
+      "Namor",
+      "Psylocke",
+      "Scarlet Witch",
+      "Spider-Man",
+      "The Punisher"
+    ],
+    "synergies": [
+      "Adam Warlock",
+      "Doctor Strange",
+      "Human Torch",
+      "Invisible Woman",
+      "Magneto",
+      "Mantis",
+      "Namor"
+    ]
+  },
+  "The Punisher": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Control",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 4.0,
+    "healingResponsibility": "Strategist",
+    "notes": "Prioritize flyers.",
+    "counters": [
+      "Groot",
+      "Hela",
+      "Hulk",
+      "Human Torch",
+      "Invisible Woman",
+      "Iron Man",
+      "Loki",
+      "Luna Snow",
+      "Magik",
+      "Magneto",
+      "Mantis",
+      "Mister Fantastic",
+      "Peni Parker",
+      "Scarlet Witch",
+      "Star-Lord",
+      "Storm",
+      "Thor",
+      "Venom"
+    ],
+    "counteredBy": [
+      "Black Panther",
+      "Captain America",
+      "Hawkeye",
+      "Hela",
+      "Iron Fist",
+      "Magik"
+    ],
+    "synergies": [
+      "Doctor Strange",
+      "Mantis"
+    ]
+  },
+  "Winter Soldier": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": null,
+    "secondaryZone": null,
+    "healingPriority": 4.0,
+    "healingResponsibility": "Strategist",
+    "notes": null,
+    "counters": [
+      "Black Panther",
+      "Doctor Strange",
+      "Iron Fist",
+      "Magik",
+      "Thor",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Doctor Strange",
+      "Hawkeye",
+      "Hela",
+      "Magneto",
+      "Psylocke",
+      "Star Lord",
+      "Thor"
+    ],
+    "synergies": [
+      "Mantis"
+    ]
+  },
+  "Wolverine": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 4.0,
+    "healingResponsibility": "Check-In",
+    "notes": "Specializes in killing Vanguard characters as damage scales with targets base HP.",
+    "counters": [
+      "Doctor Strange",
+      "Groot",
+      "Hulk",
+      "Magneto",
+      "Mister Fantastic",
+      "Thor",
+      "Venom"
+    ],
+    "counteredBy": [
+      "Emma Frost",
+      "Invisible Woman",
+      "Iron Man",
+      "Namor",
+      "Peni Parker",
+      "Psylocke",
+      "Scarlet Witch",
+      "Storm",
+      "Winter Soldier"
+    ],
+    "synergies": []
+  },
+  "Adam Warlock": {
+    "role": "Strategist",
+    "archetype": "Generalist",
+    "rangeStyle": "Off Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 1.0,
+    "healingResponsibility": "Self",
+    "notes": "There is no reason to use his ultimate as soon as you get it. When your team is loosing a fight, retreat somewhere safe, and revive your team.",
+    "counters": [
+      "Storm"
+    ],
+    "counteredBy": [
+      "Black Panther",
+      "Iron Fist",
+      "Psylocke",
+      "Spider-Man",
+      "Venom"
+    ],
+    "synergies": []
+  },
+  "Cloak & Dagger": {
+    "role": "Strategist",
+    "archetype": "Generalist",
+    "rangeStyle": "Main Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": null,
+    "counters": [
+      "Black Widow",
+      "Emma Frost",
+      "Invisible Woman",
+      "Iron Fist",
+      "Magik"
+    ],
+    "counteredBy": [
+      "Hawkeye",
+      "Hela",
+      "Magik",
+      "Magneto",
+      "Psylocke"
+    ],
+    "synergies": []
+  },
+  "Invisible Woman": {
+    "role": "Strategist",
+    "archetype": "Generalist",
+    "rangeStyle": "Main Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Shield",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "Gets more value when paired with frontline, brawl heavy teams. Her auto attack penetrates, healing allies while damaging enemies, rewarding aggressive play.",
+    "counters": [
+      "Psylocke",
+      "Storm",
+      "Wolverine"
+    ],
+    "counteredBy": [
+      "Cloak and Dagger",
+      "Iron Fist",
+      "Magik",
+      "Moon Knight",
+      "Psylocke",
+      "Scarlet Witch",
+      "Spider-Man",
+      "Squirrel Girl",
+      "The Punisher"
+    ],
+    "synergies": [
+      "Human Torch",
+      "Iron Man"
+    ]
+  },
+  "Jeff the Land Shark": {
+    "role": "Strategist",
+    "archetype": "Generalist",
+    "rangeStyle": "Off Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Dive",
+    "secondaryZone": "Enemy Backline",
+    "healingPriority": 4.0,
+    "healingResponsibility": "Self",
+    "notes": "Can dive in a three-healer composition.",
+    "counters": [
+      "Anyone dumb enough to chase him."
+    ],
+    "counteredBy": [
+      "Black Panther",
+      "Black Widow",
+      "Hawkeye",
+      "Iron Man",
+      "Peni Parker",
+      "Psylocke",
+      "Spider-Man",
+      "Storm"
+    ],
+    "synergies": [
+      "Luna Snow"
+    ]
+  },
+  "Loki": {
+    "role": "Strategist",
+    "archetype": "Generalist",
+    "rangeStyle": "Main Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Control",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": null,
+    "counters": [
+      "Black Panther",
+      "Captain America",
+      "Hela",
+      "Iron Fist",
+      "Luna Snow",
+      "Peni Parker",
+      "Star-Lord"
+    ],
+    "counteredBy": [
+      "Iron Man",
+      "Moon Knight",
+      "Psylocke",
+      "The Punisher"
+    ],
+    "synergies": []
+  },
+  "Luna Snow": {
+    "role": "Strategist",
+    "archetype": "Generalist",
+    "rangeStyle": "Main Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 1.0,
+    "healingResponsibility": "Health Pack",
+    "notes": null,
+    "counters": [
+      "Hela",
+      "Magik",
+      "Star-Lord",
+      "Storm"
+    ],
+    "counteredBy": [
+      "Captain America",
+      "Iron Man",
+      "Loki",
+      "Psylocke",
+      "Scarlet Witch",
+      "Spider-Man",
+      "The Punisher"
+    ],
+    "synergies": []
+  },
+  "Mantis": {
+    "role": "Strategist",
+    "archetype": "Specialist",
+    "rangeStyle": "Off Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Buff",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 1.0,
+    "healingResponsibility": "Self",
+    "notes": "Gets more value when prioritizing highly mobile, low base HP characters due to auto-aim healing and healing over time.",
+    "counters": [
+      "Black Panther",
+      "Psylocke",
+      "Thor"
+    ],
+    "counteredBy": [
+      "Captain America",
+      "Iron Fist",
+      "Iron Man",
+      "Psylocke",
+      "Spider-Man",
+      "The Punisher"
+    ],
+    "synergies": []
+  },
+  "Rocket Raccoon": {
+    "role": "Strategist",
+    "archetype": "Generalist",
+    "rangeStyle": "Main Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": null,
+    "counters": [
+      "Iron Fist"
+    ],
+    "counteredBy": [
+      "Black Panther",
+      "Iron Man",
+      "Psylocke",
+      "Star Lord",
+      "Venom"
+    ],
+    "synergies": []
+  },
+  "Ultron": {
+    "role": "Strategist",
+    "archetype": "Hybrid",
+    "rangeStyle": "Off Healer",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 1.0,
+    "healingResponsibility": "Health Pack",
+    "notes": "Prioritize flyers.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "Angela": {
+    "role": "Vanguard",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Dive",
+    "primaryZone": "Enemy Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Check-In",
+    "notes": "Added from Mobalytics roster/guide coverage; mobile frontline diver.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "Rogue": {
+    "role": "Vanguard",
+    "archetype": "Generalist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Frontline",
+    "healingPriority": 3.0,
+    "healingResponsibility": "Check-In",
+    "notes": "Added from Mobalytics roster/guide coverage; frontline bruiser profile.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "Black Cat": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Hitscan",
+    "primaryJob": "Dive",
+    "primaryZone": "Flank",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Off-Angle",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "Added from Mobalytics roster/guide coverage.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "Blade": {
+    "role": "Duelist",
+    "archetype": "Hybrid",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Poke",
+    "secondaryZone": "Off-Angle",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "Mobalytics guide highlights anti-heal pressure and mixed melee/poke lethality.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "Daredevil": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Dive",
+    "primaryZone": "Flank",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "Added from Mobalytics roster/guide coverage.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "Deadpool (Duelist)": {
+    "role": "Duelist",
+    "archetype": "Specialist",
+    "rangeStyle": "Melee",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Dive",
+    "secondaryZone": "Flank",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "Role-split profile for Duelist Deadpool.",
+    "counters": [
+      "Loki",
+      "Mantis",
+      "Jeff the Land Shark",
+      "Luna Snow",
+      "Hawkeye",
+      "The Punisher"
+    ],
+    "counteredBy": [
+      "Peni Parker",
+      "Doctor Strange",
+      "Emma Frost",
+      "Namor",
+      "Hela",
+      "Moon Knight"
+    ],
+    "synergies": [
+      "Venom",
+      "Captain America",
+      "Mantis",
+      "Invisible Woman"
+    ]
+  },
+  "Deadpool (Vanguard)": {
+    "role": "Vanguard",
+    "archetype": "Hybrid",
+    "rangeStyle": "Melee",
+    "primaryJob": "Brawl",
+    "primaryZone": "Frontline",
+    "secondaryJob": "Peel",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Strategist",
+    "notes": "Role-split profile for Vanguard Deadpool.",
+    "counters": [
+      "Spider-Man",
+      "Black Panther",
+      "Iron Fist",
+      "Wolverine",
+      "Psylocke"
+    ],
+    "counteredBy": [
+      "Hela",
+      "Hawkeye",
+      "Namor",
+      "Magneto",
+      "The Punisher"
+    ],
+    "synergies": [
+      "Mantis",
+      "Loki",
+      "Invisible Woman",
+      "Rocket Raccoon",
+      "Doctor Strange"
+    ]
+  },
+  "Deadpool (Strategist)": {
+    "role": "Strategist",
+    "archetype": "Hybrid",
+    "rangeStyle": "Hybrid",
+    "primaryJob": "Buff",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Heal",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.5,
+    "healingResponsibility": "Primary",
+    "notes": "Role-split profile for Strategist Deadpool.",
+    "counters": [
+      "Hulk",
+      "The Thing",
+      "Venom",
+      "Captain America"
+    ],
+    "counteredBy": [
+      "Spider-Man",
+      "Black Panther",
+      "Magik",
+      "Iron Fist",
+      "Storm"
+    ],
+    "synergies": [
+      "Hulk",
+      "The Thing",
+      "Magneto",
+      "Namor",
+      "Peni Parker"
+    ]
+  },
+  "Elsa Bloodstone": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Ranged",
+    "primaryJob": "Poke",
+    "primaryZone": "Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "Added from Mobalytics roster/guide coverage.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "Moon Knight": {
+    "role": "Duelist",
+    "archetype": "Generalist",
+    "rangeStyle": "Mid-Range",
+    "primaryJob": "Poke",
+    "primaryZone": "Backline",
+    "secondaryJob": "Brawl",
+    "secondaryZone": "Frontline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "Mobalytics lists Moon Knight and calls out vulnerability to dive/sniper counters.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "Phoenix": {
+    "role": "Duelist",
+    "archetype": "Hybrid",
+    "rangeStyle": "Ranged",
+    "primaryJob": "Poke",
+    "primaryZone": "Backline",
+    "secondaryJob": "Dive",
+    "secondaryZone": "Flank",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "High-impact Primal Flame team-up with Wolverine (Mobalytics).",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": [
+      "Wolverine"
+    ]
+  },
+  "Gambit": {
+    "role": "Strategist",
+    "archetype": "Hybrid",
+    "rangeStyle": "Melee",
+    "primaryJob": "Control",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Buff",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 2.0,
+    "healingResponsibility": "Self",
+    "notes": "Added from Mobalytics roster/guide coverage as Strategist.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  },
+  "White Fox": {
+    "role": "Strategist",
+    "archetype": "Hybrid",
+    "rangeStyle": "Hybrid",
+    "primaryJob": "Heal",
+    "primaryZone": "Ally Backline",
+    "secondaryJob": "Buff",
+    "secondaryZone": "Ally Backline",
+    "healingPriority": 1.5,
+    "healingResponsibility": "Self",
+    "notes": "Added from Mobalytics roster/guide coverage.",
+    "counters": [],
+    "counteredBy": [],
+    "synergies": []
+  }
+}

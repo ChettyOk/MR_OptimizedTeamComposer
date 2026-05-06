@@ -1,0 +1,21 @@
+{
+  "name": "teamcomposer-mr",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "db:generate": "pnpm --filter @teamcomposer/db db:generate",
+    "db:migrate": "pnpm --filter @teamcomposer/db db:migrate",
+    "db:push": "pnpm --filter @teamcomposer/db db:push",
+    "db:studio": "pnpm --filter @teamcomposer/db db:studio"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+  "engines": {
+    "node": ">=20"
+  }
+}
