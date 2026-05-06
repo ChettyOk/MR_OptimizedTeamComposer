@@ -179,7 +179,10 @@ export function TeamComposerApp() {
     });
   };
 
-  const heroPortraitPath = (id: string) => `/heroes/${id}.webp`;
+  const heroPortraitPath = (id: string) => {
+    if (id.startsWith("deadpool-")) return "/heroes/deadpool.webp";
+    return `/heroes/${id}.webp`;
+  };
 
   const payload = useCallback(
     (): OptimizeInput => ({
