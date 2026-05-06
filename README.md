@@ -216,6 +216,21 @@ pnpm --filter @teamcomposer/web test
 
 This app is deployment-ready for standard Next.js hosting (e.g. Vercel, Railway, Fly.io).
 
+### Vercel + Neon (Postgres)
+
+For Neon on Vercel, set these environment variables in the Vercel project:
+
+- `DATABASE_URL`: your Neon connection string (include `?sslmode=require` if your Neon dashboard shows it)
+- `ADMIN_USERNAME` / `ADMIN_PASSWORD`: enables `/admin/login` and admin API session cookies
+- `REDIS_URL` (optional): enables optimize result caching (the app still works without it)
+- `DATABASE_CLIENT` (optional): set to `"neon"` to force the Neon serverless DB driver (defaults to Neon on Vercel)
+
+Run DB migrations separately (Vercel won’t do this automatically):
+
+```bash
+pnpm db:migrate
+```
+
 Recommended production steps:
 
 - set **`ADMIN_USERNAME`** and **`ADMIN_PASSWORD`** in the server environment (replaces the old single `ADMIN_API_KEY`); sign in at `/admin/login` so the browser gets the session cookie for admin APIs

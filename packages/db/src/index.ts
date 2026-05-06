@@ -1,9 +1,11 @@
 import { eq, sql } from "drizzle-orm";
-import { drizzle } from "drizzle-orm/node-postgres";
+import { drizzle as nodePostgresDrizzle } from "drizzle-orm/node-postgres";
+import { drizzle as neonServerlessDrizzle } from "drizzle-orm/neon-serverless";
+import { neon } from "@neondatabase/serverless";
 import { Pool } from "pg";
 import * as schema from "./schema";
 
-export type Database = ReturnType<typeof drizzle<typeof schema>>;
+export type Database = ReturnType<typeof nodePostgresDrizzle<typeof schema>>;
 
 let cached: Database | null = null;
 
@@ -11,7 +13,17 @@ export function getDb(): Database | null {
   const url = process.env.DATABASE_URL;
   if (!url) return null;
   if (!cached) {
-    cached = drizzle(new Pool({ connectionString: url }), { schema });
+    // Vercel serverless runtime should use Neon’s serverless driver.
+    // To be explicit, set `DATABASE_CLIENT=neon` in Vercel env vars.
+    const client = (process.env.DATABASE_CLIENT ?? "").toLowerCase();
+    const useNeon =
+      client === "neon" ||
+      client === "neon-serverless" ||
+      (!client && process.env.VERCEL === "1");
+
+    cached = useNeon
+      ? (neonServerlessDrizzle(neon(url), { schema }) as Database)
+      : nodePostgresDrizzle(new Pool({ connectionString: url }), { schema });
   }
   return cached;
 }

@@ -93,6 +93,9 @@ importers:
       drizzle-orm:
         specifier: ^0.39.3
         version: 0.39.3(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(pg@8.20.0)
+      '@neondatabase/serverless':
+        specifier: 0.10.4
+        version: 0.10.4
       pg:
         specifier: ^8.13.1
         version: 8.20.0
