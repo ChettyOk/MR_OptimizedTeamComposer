@@ -1,11 +1,13 @@
 import { eq, sql } from "drizzle-orm";
 import { drizzle as nodePostgresDrizzle } from "drizzle-orm/node-postgres";
-import { drizzle as neonServerlessDrizzle } from "drizzle-orm/neon-serverless";
+import { drizzle as neonHttpDrizzle } from "drizzle-orm/neon-http";
 import { neon } from "@neondatabase/serverless";
 import { Pool } from "pg";
 import * as schema from "./schema";
 
-export type Database = ReturnType<typeof nodePostgresDrizzle<typeof schema>>;
+export type Database =
+  | ReturnType<typeof nodePostgresDrizzle<typeof schema>>
+  | ReturnType<typeof neonHttpDrizzle<typeof schema>>;
 
 let cached: Database | null = null;
 
@@ -22,7 +24,7 @@ export function getDb(): Database | null {
       (!client && process.env.VERCEL === "1");
 
     cached = useNeon
-      ? (neonServerlessDrizzle(neon(url), { schema }) as Database)
+      ? (neonHttpDrizzle(neon(url), { schema }) as Database)
       : nodePostgresDrizzle(new Pool({ connectionString: url }), { schema });
   }
   return cached;
