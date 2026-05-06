@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { forceCenter, forceCollide, forceLink, forceManyBody, forceSimulation } from "d3-force";
 import type { ScoredTeam } from "@teamcomposer/optimizer";
 import type { Hero } from "@/data/heroes";
@@ -33,11 +33,6 @@ export function SynergyGraph({
   team: ScoredTeam;
   heroesById: Map<string, Hero>;
 }) {
-  const [layout, setLayout] = useState<{ nodes: GraphNode[]; edges: GraphEdge[] }>({
-    nodes: [],
-    edges: [],
-  });
-
   const graphData = useMemo(() => {
     const nodes: GraphNode[] = team.team.map((id) => {
       const hero = heroesById.get(id);
@@ -61,7 +56,7 @@ export function SynergyGraph({
     return { nodes, edges };
   }, [team, heroesById]);
 
-  useEffect(() => {
+  const layout = useMemo(() => {
     const width = 560;
     const height = 300;
     const nodes = graphData.nodes.map((n) => ({ ...n }));
@@ -80,8 +75,8 @@ export function SynergyGraph({
       .stop();
 
     for (let i = 0; i < 120; i += 1) sim.tick();
-    setLayout({ nodes, edges });
     sim.stop();
+    return { nodes, edges };
   }, [graphData]);
 
   return (
